@@ -78,8 +78,8 @@ class Xsdk(Package):
     depends_on('sundials@3.2.1~int64+hypre', when='@0.4.0')
     depends_on('sundials@3.1.0~int64+hypre', when='@0.3.0')
 
-    depends_on('plasma@18.10.0:', when='@develop %gcc@6.0:')
-    depends_on('plasma@18.10.0:', when='@0.4.0 %gcc@6.0:')
+    depends_on('plasma@18.11.1:', when='@develop %gcc@6.0:')
+    depends_on('plasma@18.11.1:', when='@0.4.0 %gcc@6.0:')
 
     depends_on('magma@2.4.0', when='@develop +cuda')
     depends_on('magma@2.4.0', when='@0.4.0 +cuda')
