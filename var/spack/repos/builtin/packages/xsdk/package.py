@@ -39,7 +39,7 @@ class Xsdk(Package):
     depends_on('mfem@3.3.2+mpi+hypre+superlu-dist+petsc+sundials+examples+miniapps', when='@0.3.0')
 
     depends_on('superlu-dist@develop', when='@develop')
-    depends_on('superlu-dist@develop', when='@0.4.0')
+    depends_on('superlu-dist@6.1.0-rc1', when='@0.4.0')
     depends_on('superlu-dist@5.2.2', when='@0.3.0')
     depends_on('superlu-dist@xsdk-0.2.0', when='@xsdk-0.2.0')
 
@@ -65,12 +65,12 @@ class Xsdk(Package):
     depends_on('dealii@9.0.1~assimp~python~doc~slepc~gmsh+petsc+mpi+trilinos~int64+hdf5~netcdf+metis', when='@0.4.0')
 
     depends_on('pflotran@develop', when='@develop')
-    depends_on('pflotran@develop', when='@0.4.0')
+    depends_on('pflotran@xsdk-0.4.0', when='@0.4.0')
     depends_on('pflotran@xsdk-0.3.0', when='@0.3.0')
     depends_on('pflotran@xsdk-0.2.0', when='@xsdk-0.2.0')
 
     depends_on('alquimia@develop', when='@develop')
-    depends_on('alquimia@develop', when='@0.4.0')
+    depends_on('alquimia@xsdk-0.4.0', when='@0.4.0')
     depends_on('alquimia@xsdk-0.3.0', when='@0.3.0')
     depends_on('alquimia@xsdk-0.2.0', when='@xsdk-0.2.0')
 
